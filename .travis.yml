@@ -10,7 +10,6 @@ script:
   - docker run -e CI=true dhaxor/docker-frontend yarn run test
 
 deploy:
-  skip_cleanup: true
   provider: elasticbeanstalk
   region: "af-south-1"
   app: "frontend-docker"
