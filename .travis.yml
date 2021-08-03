@@ -6,4 +6,4 @@ before_install:
   - docker build -t dhaxor/docker-frontend -f Dockerfile.dev .
 
 script:
-  - docker run dhaxor/docker-frontend yarn run test -- --coverage
+  - travis_wait 30 docker run dhaxor/docker-frontend yarn run test -- --coverage
