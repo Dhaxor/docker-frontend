@@ -11,5 +11,5 @@ RUN yarn run build
 
 
 FROM nginx:1.15
-EXPOSE 80
+EXPOSE 3000
 COPY --from=builder /app/build/ /usr/share/nginx/html
