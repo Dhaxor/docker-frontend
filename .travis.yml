@@ -16,6 +16,7 @@ deploy:
   env: "Frontenddocker-env"
   bucket_name: "elasticbeanstalk-af-south-1-531095638142"
   bucket_path: "frontend-docker"
+  edge: true
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
